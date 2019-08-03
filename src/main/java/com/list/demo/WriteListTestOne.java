@@ -29,7 +29,12 @@ public class WriteListTestOne {
         System.out.println("获取第三个元素值:" + extArrayList.get(2));
         System.out.println("获取第四个元素值:" + extArrayList.get(3));
         //数组越界
-        System.out.println("获取第五个元素值:" + extArrayList.get(4));
+//        System.out.println("获取第五个元素值:" + extArrayList.get(4));
+        extArrayList.remove(3);
+        System.out.println("获取第一个元素值:" + extArrayList.get(0));
+        System.out.println("获取第二个元素值:" + extArrayList.get(1));
+        System.out.println("获取第三个元素值:" + extArrayList.get(2));
+
 
     }
 

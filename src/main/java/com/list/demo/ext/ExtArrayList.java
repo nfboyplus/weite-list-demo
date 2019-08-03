@@ -60,10 +60,14 @@ public class ExtArrayList<E> implements ExtList<E> {
      * 删除数据
      */
     public Object remove(int index) {
+        //使用下标查询该值是否存在
         Object object = get(index);
+        //计算删除元素后面的长度
         int numMoved = elementData.length - index - 1;
+        //删除原理分析
         if (numMoved > 0)
             System.arraycopy(elementData, index + 1, elementData, index, numMoved);
+        //将最后一个元素变为空
         elementData[--size] = null;
         return object;
     }
